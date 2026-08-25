@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JORAM JARK Business Center - Printing, Design & Online Services in Uganda</title>
+    <meta name="description"
+        content="JARK Business Center Kawanda - Printing, Graphic Design, URA/UNEB Applications, Mobile Money. Order online 24/7, we deliver.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Inter, Arial, sans-serif
+        }
+
+        body {
+            background: #f6f8f6;
+            color: #222;
+            line-height: 1.6
+        }
+
+        header {
+            background: #0d7a3e;
+            color: white;
+            padding: 22px 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10
+        }
+
+        .hero {
+            background: white;
+            padding: 35px 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07)
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e7f5ec;
+            color: #0d7a3e;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px
+        }
+
+        .btn {
+            background: #0d7a3e;
+            color: white;
+            padding: 13px 26px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: .2s
+        }
+
+        .btn:hover {
+            background: #095a2d;
+            transform: translateY(-1px)
+        }
+
+        .btn-whatsapp {
+            background: #25D366
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            padding: 0 20px
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            border: 1px solid #eef2ee
+        }
+
+        .card h3 {
+            margin: 12px 0 8px;
+            color: #0d7a3e
+        }
+
+        .price {
+            font-weight: 800;
+            color: #111;
+            font-size: 18px;
+            margin: 10px 0
+        }
+
+        .order-section {
+            background: white;
+            margin: 20px;
+            padding: 26px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07)
+        }
+
+        .form-group {
+            margin-bottom: 16px
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 14px
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1.5px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px
+        }
+
+        .form-group input:focus {
+            border-color: #0d7a3e;
+            outline: none
+        }
+
+        .float-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 99
+        }
+
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 13px
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JORAM JARK BUSINESS CENTER</h1>
+        <p>Your One-Stop in Kabale, Rwakaraba on Bunyonyi road. • Open 7am - 9pm • Online 24/7</p>
+    </header>
+
+    <div class="hero">
+        <div class="badge">✓ FAST DELIVERY IN KABALE • ONLINE ORDERS 24/7</div>
+        <h2>Printing, Design & Online Services - Just WhatsApp Us</h2>
+        <p style="margin:15px auto;max-width:600px;">We do printing, graphic design, URA, UNEB, Passport, University
+            applications, Mobile Money. Send your file on WhatsApp, we print and deliver.</p>
+        <a href="#order" class="btn">Place Order Now</a>
+        <a href="https://wa.me/2567XXXXXXXX" class="btn btn-whatsapp">Chat on WhatsApp</a>
+    </div>
+
+    <div class="services">
+        <div class="card">
+            <h3>🖨️ Printing & Photocopy</h3>
+            <p>Color, B/W, Binding, Lamination. Send PDF on WhatsApp.</p>
+            <div class="price">From UGX 500</div><button class="btn"
+                onclick="orderService('Printing & Photocopy')">Order This</button>
+        </div>
+        <div class="card">
+            <h3>🎨 Graphic Design</h3>
+            <p>Posters, Logos, Banners, Business Cards - same day.</p>
+            <div class="price">From UGX 10,000</div><button class="btn" onclick="orderService('Graphic Design')">Order
+                This</button>
+        </div>
+        <div class="card">
+            <h3>💻 Online Applications</h3>
+            <p>URA TIN, UNEB, University, Passport, YAKA.</p>
+            <div class="price">From UGX 5,000</div><button class="btn"
+                onclick="orderService('Online Application')">Order This</button>
+        </div>
+        <div class="card">
+            <h3>📱 Mobile Money & Airtime</h3>
+            <p>MTN, Airtel, All Networks, Fast & Secure.</p>
+            <div class="price">Available</div><button class="btn" onclick="orderService('Mobile Money')">Order
+                This</button>
+        </div>
+    </div>
+
+    <div class="order-section" id="order">
+        <h2 style="text-align:center;color:#0d7a3e;margin-bottom:18px;">Place Your Online Order</h2>
+        <div class="form-group"><label>Your Name</label><input type="text" id="custName" placeholder="e.g. John Mukasa">
+        </div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" id="custPhone" placeholder="07XXXXXXXX">
+        </div>
+        <div class="form-group"><label>Select Service</label><select id="custService">
+                <option>Printing & Photocopy</option>
+                <option>Graphic Design</option>
+                <option>Online Applications</option>
+                <option>Mobile Money & Airtime</option>
+                <option>Other Service</option>
+            </select></div>
+        <div class="form-group"><label>Order Details</label><textarea id="custDetails" rows="4"
+                placeholder="e.g. Print 20 color copies of my CV, A4..."></textarea></div>
+        <button class="btn" style="width:100%" onclick="sendWhatsApp()">Send Order via WhatsApp →</button>
+        <p style="text-align:center;margin-top:10px;font-size:12px;color:#666">We reply within 5 minutes • Payment on
+            delivery / Mobile Money</p>
+    </div>
+
+    <a class="float-wa" href="https://wa.me/2567XXXXXXXX" target="_blank">💬</a>
+
+    <footer>
+        <p>© 2026 JARK Business Center | Kabale, Rwakaraba | Delivering to Mbarara, Kabale & Beyond<br>Call: 0759683042
+            • WhatsApp: 256759683042</p>
+    </footer>
+
+    <script>
+        function orderService(s) {document.getElementById('custService').value = s; document.getElementById('order').scrollIntoView({behavior: 'smooth'});}
+        function sendWhatsApp() {
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const service = document.getElementById('custService').value;
+            const details = document.getElementById('custDetails').value.trim();
+            if (!name || !phone || !details) {alert("Please fill all fields"); return;}
+            const myNumber = "2567XXXXXXXX"; // << CHANGE TO YOUR NUMBER e.g. 256771234567
+            const msg = `Hello JARK! New Order:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Details:* ${details}%0A%0AFrom Website`;
+            window.open(`https://wa.me/${myNumber}?text=${msg}`, "_blank");
+        }
+    </script>
+</body>
+
+</html>
